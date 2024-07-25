@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name":"Plan Your Watch",
+    "version": "0.1",
+    "description":"Plan when you want to watch YouTube videos and block watching videos now",
+    "permissions": ["activeTab", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["content.js"],
+        "css": ["styles.css"]
+      }
+    ],
+    "web_accessible_resources": [
+      "icons/mark_false.png",
+      "icons/mark_true.png"
+    ]
+  }

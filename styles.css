@@ -1,0 +1,30 @@
+.custom-yt-button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.custom-yt-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.custom-yt-button img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Adjust the layout of the ytd-menu-renderer */
+ytd-menu-renderer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Ensure the yt-icon-button stays at the top */
+ytd-menu-renderer > yt-icon-button {
+  align-self: flex-end;
+}
